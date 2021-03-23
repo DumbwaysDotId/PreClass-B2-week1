@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div style="color: aliceblue; margin-top: 100px;">
+        <form>
+            Name : <input type="text" name="name" placeholder="ex. Dedi" required>
+                <br><br>
+            Email : <input type="email" name="name" placeholder="ex. Dedi@gmail.com" required>
+                <br><br>
+            Password : <input type="password" name="name" required>
+                <br><br>
+            Age : <input type="number" placeholder="Your Age" min="13" max="40" required>
+                <br><br>
+            Your Photo : <input type="file" >
+                <br><br>
+
+            <!-- Jika attribut name nya tidak sesuai dengan opsi ke2 maka radio btn tidak akan berfungsi dengan baik. seperti pemilihan bisa lebih dari 1 -->
+            Gender : <input type="radio" name="gender" value="Male">Male <input type="radio" name="gender" value="Female">Female
+                <br><br>
+
+            Hobies : <input type="checkbox" name="hobies" value="Playing Barbie"> Playing Barbie
+            <input type="checkbox" name="hobies" value="Reading"> Reading
+            <input type="checkbox" name="hobies" value="Playing Gril"> Playing Gril
+            <input type="checkbox" name="hobies" value="Singing"> Singing
+                <br><br>
+            Address : <textarea name="address" rows="5px" cols="30px">
+            </textarea>
+                <br><br>
+            Nation : <select name="nation">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Arab">Arab</option>
+                <option value="Pakistan">Pakistan</option>
+            </select>
+
+
+                <br><br><br><br>
+            <input type="submit" value="Hit Me to Save Data">
+            <input type="reset" value="Clear the Data">
+            <input type="button" value="Hit Some Func" onclick="namefunc()">
+        </form>
+    </div>
+</body>
+</html>
